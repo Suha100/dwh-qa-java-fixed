@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["sku", "price", "currency", "status", "updatedAt"],
+  "properties": {
+    "sku": { "type": "string" },
+    "name": { "type": "string" },
+    "brand": { "type": "string" },
+    "category": { "type": "string" },
+    "price": { "type": "number", "minimum": 0 },
+    "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "status": { "type": "string", "enum": ["ACTIVE", "INACTIVE"] },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  }
+}

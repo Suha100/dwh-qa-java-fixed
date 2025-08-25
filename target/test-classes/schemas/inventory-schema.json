@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["sku","locationId","onHand","reserved","available","safetyStock","updatedAt"],
+  "properties": {
+    "sku": { "type": "string" },
+    "locationId": { "type": "string" },
+    "onHand": { "type": "integer", "minimum": 0 },
+    "reserved": { "type": "integer", "minimum": 0 },
+    "available": { "type": "integer", "minimum": 0 },
+    "safetyStock": { "type": "integer", "minimum": 0 },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["preAdjust", "postAdjust"],
+  "properties": {
+    "preAdjust": {
+      "type": "object",
+      "required": ["available"],
+      "properties": {
+        "available": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "postAdjust": {
+      "type": "object",
+      "required": ["available"],
+      "properties": {
+        "available": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

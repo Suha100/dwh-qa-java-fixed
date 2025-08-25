@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="DWH-QA Suite" verbose="1" parallel="false">
+  <listeners><listener class-name="com.dwhqa.framework.reporting.TestListener"/></listeners>
+  <test name="All Tests">
+    <groups><run><include name="api"/><include name="db"/><include name="etl"/></run></groups>
+    <classes>
+      <class name="com.dwhqa.framework.api.ApiTests"/>
+      <class name="com.dwhqa.framework.db.DatabaseTests"/>
+      <class name="com.dwhqa.framework.etl.EtlTests"/>
+    </classes>
+  </test>
+</suite>

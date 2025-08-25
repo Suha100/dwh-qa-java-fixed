@@ -1,0 +1,4 @@
+product_id,sku,name,brand,category,price,currency,status,updated_at
+p1,SKU-1001,Widget,Acme,Gadgets,19.99,USD,ACTIVE,2025-08-20T12:00:00Z
+p2,SKU-1002,Widget Plus,Acme,Gadgets,10.00,USD,ACTIVE,2025-08-20T12:00:00Z
+p3,SKU-2001,Thing,Acme,Accessories,5.00,EUR,INACTIVE,2025-08-20T12:00:00Z

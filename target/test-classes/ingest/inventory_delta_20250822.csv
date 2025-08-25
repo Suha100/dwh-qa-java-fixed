@@ -1,0 +1,3 @@
+product_id,location_id,on_hand,reserved,available,safety_stock,updated_at
+p1,SEA-01,20,5,15,10,2025-08-22T09:00:00Z
+p3,SEA-01,0,0,0,5,2025-08-22T09:00:00Z
