@@ -46,12 +46,12 @@ public class DatabaseTests {
                         String exp = expResult.replaceAll("\"", "").trim();
 
                         if (exp.startsWith("=")) {
-                            // format "= 0"
+
                             String[] parts = exp.split("\\s+");
                             long expected = Long.parseLong(parts[1]);
                             Assert.assertEquals(value, expected, "Scalar mismatch for " + id);
                         } else {
-                            // plain number format "0"
+
                             long expected = Long.parseLong(exp);
                             Assert.assertEquals(value, expected, "Scalar mismatch for " + id);
                         }
